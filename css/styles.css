@@ -1,0 +1,7 @@
+#gallery img {
+    width: 560px;
+    height: auto;
+    display: inline;
+    margin: 0;
+    border-radius: 10px;
+}
