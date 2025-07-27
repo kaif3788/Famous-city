@@ -15,7 +15,7 @@ html {
 
 /* ─── Header Banner ────────────────────────────────────── */
 header {
-    background: linear-gradient(to right, #aba3f7, #3b82f6);
+    background: linear-gradient(to right, hsla(246, 88%, 74%, 0.674), #3b82f6);
     /* smooth blue gradient */
     color: white;
     text-align: center;
@@ -173,4 +173,39 @@ footer {
     .container {
         flex-direction: column;
     }
+}
+
+/* ─── Sidebar Headings Consistency ─────────────────────── */
+aside h2 {
+    font-size: 1.1rem;
+    color: #1e3a8a;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #1e3a8a;
+    padding-bottom: 0.3rem;
+}
+
+/* ─── Contact Form Improvements ────────────────────────── */
+#contact {
+    margin-top: 1.5rem;
+}
+
+#contact form {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Label refinement for uppercase */
+.form-label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    color: #1e293b;
+}
+
+/* Adjust placeholder size in form fields */
+.form-control::placeholder {
+    font-size: 0.85rem;
+    color: #aaa;
 }
