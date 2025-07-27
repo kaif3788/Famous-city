@@ -15,110 +15,113 @@
 
 <body>
     <header>
-        <h1>Paris</h1>
+        <div class="banner">
+            <h1>Paris</h1>
+        </div>
     </header>
-    <main>
-        <!-- Overview -->
-        <section id="overview">
-            <h2>Overview</h2>
-            <blockquote cite="https://en.parisinfo.com">
-                <strong>Paris</strong> Paris, the capital and largest city of France, is a global center for
-                art,fashion,
-                gastronomy, and culture. It's known for its iconic landmarks like the Eiffel Tower and Notre-Dame
-                Cathedral,
-                its grand boulevards, and its vibrant cafe culture. The city offers a blend of historical charm and
-                modern
-                attractions, making it a popular destination for tourists.
-            </blockquote>
-        </section>
 
-        <!-- Gallery -->
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <figure>
-                <img src="images/Eiffel.jpg" alt="Eiffel Tower in Paris">
-                <figcaption>The iconic Eiffel Tower</figcaption>
-            </figure>
-        </section>
+    <!-- Layout wrapper for 2-column design -->
+    <div class="container">
+        <!-- Left Column: Main Content -->
+        <main>
+            <!-- Overview Section -->
+            <section class="card" id="overview">
+                <h2>Overview</h2>
+                <blockquote cite="https://en.parisinfo.com">
+                    <strong>Paris</strong> is the capital and largest city of France, a global center for art, fashion,
+                    gastronomy, and culture. It's known for its iconic landmarks like the Eiffel Tower and Notre-Dame
+                    Cathedral, its grand boulevards, and its vibrant cafe culture. The city offers a blend of historical
+                    charm
+                    and modern attractions, making it a popular destination for tourists.
+                </blockquote>
+            </section>
 
-        <!-- Famous Quote -->
-        <section id="quote">
-            <h2>Famous Quote</h2>
-            <p><q cite="https://example.com">A walk about Paris will provide lessons in history, beauty, and in the
-                    point of Life.</q>
-                <cite>- Thomas Jefferson</cite>
-            </p>
-        </section>
+            <!-- Gallery Section -->
+            <section class="card" id="gallery">
+                <h2>Gallery</h2>
+                <figure>
+                    <img src="images/Eiffel.jpg" alt="Eiffel Tower in Paris">
+                    <figcaption>The iconic Eiffel Tower</figcaption>
+                </figure>
+            </section>
 
-        <!-- Video -->
-        <section id="video">
-            <h2>Watch Paris</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/UfEiKK-iX70" title="Paris Video"
-                frameborder="0" allowfullscreen></iframe>
-        </section>
-    </main>
+            <!-- Quote Section -->
+            <section class="card" id="quote">
+                <h2>Famous Quote</h2>
+                <p>
+                    <q cite="https://example.com">A walk about Paris will provide lessons in history, beauty, and in the
+                        point of Life.</q>
+                    <cite>– Thomas Jefferson</cite>
+                </p>
+            </section>
 
-    <aside>
-        <!-- Links -->
-        <section id="links">
-            <h2>Useful Links</h2>
-            <ul>
-                <li><a href="https://en.wikipedia.org/wiki/Paris" target="_blank"
-                        title="Wikipedia article about Paris">Paris on Wikipedia</a></li>
-                <li><a href="https://www.louvre.fr/en" target="_blank" title="Louvre Museum">Louvre Museum</a></li>
-                <li><a href="https://www.france.fr/en" target="_blank" title="France Travel">France Travel Guide</a>
-                </li>
-            </ul>
-        </section>
+            <!-- Video Section -->
+            <section class="card" id="video">
+                <h2>Watch Paris</h2>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/UfEiKK-iX70" title="Paris Video"
+                    frameborder="0" allowfullscreen></iframe>
+            </section>
+        </main>
 
-        <!-- Table -->
-        <section id="facts">
-            <h2>Paris Facts</h2>
-            <table border="1">
-                <tr>
-                    <th>Fact</th>
-                    <th>Value</th>
-                </tr>
-                <tr>
-                    <td>Population</td>
-                    <td>2.1 million</td>
-                </tr>
-                <tr>
-                    <td>Timezone</td>
-                    <td>CET (UTC+1)</td>
-                </tr>
-                <tr>
-                    <td>Founded</td>
-                    <td>3rd century BC</td>
-                </tr>
-            </table>
-        </section>
+        <!-- Right Column: Aside -->
+        <aside>
+            <!-- Useful Links -->
+            <section class="card" id="links">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Paris" target="_blank">Paris on Wikipedia</a></li>
+                    <li><a href="https://www.louvre.fr/en" target="_blank">Louvre Museum</a></li>
+                    <li><a href="https://www.france.fr/en" target="_blank">France Travel Guide</a></li>
+                </ul>
+            </section>
 
-        <!-- Form -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name" class="form-label">Name:</label>
-                <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required
-                    autofocus><br>
+            <!-- Facts Table -->
+            <section class="card" id="facts">
+                <h2>Paris Facts</h2>
+                <table>
+                    <tr>
+                        <th>Fact</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Population</td>
+                        <td>2.1 million</td>
+                    </tr>
+                    <tr>
+                        <td>Timezone</td>
+                        <td>CET (UTC+1)</td>
+                    </tr>
+                    <tr>
+                        <td>Founded</td>
+                        <td>3rd century BC</td>
+                    </tr>
+                </table>
+            </section>
 
-                <label for="email" class="form-label">Email:</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="you@example.com"><br>
+            <!-- Contact Form -->
+            <section class="card" id="contact">
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required autofocus>
 
-                <label for="reason" class="form-label">Reason:</label>
-                <select id="reason" name="reason" class="form-control">
-                    <option value="info">More Info</option>
-                    <option value="feedback">Feedback</option>
-                </select><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
 
-                <label for="message" class="form-label">Message:</label><br>
-                <textarea id="message" name="message" class="form-control"
-                    placeholder="Write your message..."></textarea><br>
+                    <label for="reason">Reason:</label>
+                    <select id="reason" name="reason">
+                        <option value="info">More Info</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
 
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </aside>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Write your message..."></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </aside>
+    </div>
 
     <footer>
         <p>&copy; Mohd Kaif, 2025</p>
